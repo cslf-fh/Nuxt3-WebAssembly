@@ -1,0 +1,19 @@
+[package]
+name = "trial"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+js-sys = "0.3.60" # wasm-bindgen 経由で JavaScript の API を使うためのライブラリ
+wasm-bindgen = "0.2.83" # WebAssembly 経由で Rust を呼び出せるようにするためのブリッジを提供する
+
+[dependencies.web-sys] # wasm-bindgen 経由で Web API を使うためのライブラリ
+features = [
+  'Window',
+]
+version = "0.3.60"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
