@@ -178,7 +178,7 @@ let wasm: { pulldown_cmark: typeof pulldown_cmark };
 import('../wasm/pulldown-cmark/pkg/pulldown_cmark')
   .then((pkg) => (wasm = pkg))
   .finally(() => {
-    parsedText.value = wasm.pulldown_cmark(inputText.value);
+    parsedText.value = wasm?.pulldown_cmark(inputText.value);
   });
 
 watch(inputText, (newVal, oldVal) => {

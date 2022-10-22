@@ -5,6 +5,7 @@ import topLevelAwait from 'vite-plugin-top-level-await';
 export default defineNuxtConfig({
   typescript: { strict: true },
   ssr: false,
+  target: 'static',
   vite: {
     plugins: [wasm(), topLevelAwait()],
   },
