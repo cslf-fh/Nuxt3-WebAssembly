@@ -8,4 +8,7 @@ export default defineNuxtConfig({
   vite: {
     plugins: [wasm(), topLevelAwait()],
   },
+  app: {
+    cdnURL: '/Nuxt3-WebAssembly',
+  },
 });
