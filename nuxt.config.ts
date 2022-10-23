@@ -4,12 +4,7 @@ import topLevelAwait from 'vite-plugin-top-level-await';
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   typescript: { strict: true },
-  ssr: false,
-  target: 'static',
   vite: {
     plugins: [wasm(), topLevelAwait()],
-  },
-  app: {
-    cdnURL: '/Nuxt3-WebAssembly',
   },
 });
