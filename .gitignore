@@ -10,3 +10,7 @@ dist
 wasm/*/target
 wasm/*/pkg
 wasm/*/Cargo.lock
+
+public/wasm/*/target
+public/wasm/*/pkg
+public/wasm/*/Cargo.lock
